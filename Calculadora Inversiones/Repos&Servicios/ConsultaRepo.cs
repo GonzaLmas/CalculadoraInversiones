@@ -14,12 +14,6 @@ namespace Calculadora_Inversiones.Servicios
 
     public class ConsultaRepo : ConsultaInterface
     {
-        public async Task<IEnumerable<CedearModel>> GetCedearModels()
-        {
-            using (IDbConnection connection = new SqlConnection(DBConnection.GetStringConnection()))
-            {
-                return await connection.QueryAsync<CedearModel>(@"SELECT Cedear, Descripcion FROM Cedear");
-            }
-        }
+        
     }
 }

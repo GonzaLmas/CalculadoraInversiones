@@ -10,9 +10,23 @@ namespace Calculadora_Inversiones
         {
             InitializeComponent();
 
-            cboCedears.DataSource = cedearRepo.GetCedearModels();
-            cboCedears.DisplayMember = "Nombre";
-            cboCedears.ValueMember = "Id";
+            // Combobox hardcodeado para usar de manera simple la app
+            cboCedears.Items.Add("EJ1");
+            cboCedears.Items.Add("EJ2");
+            cboCedears.Items.Add("EJ3");
+            cboCedears.Items.Add("EJ4");
+            cboCedears.Items.Add("EJ5");
+            cboCedears.Items.Add("EJ6");
+            cboCedears.Items.Add("EJ6");
+            cboCedears.Items.Add("EJ7");
+            cboCedears.Items.Add("EJ8");
+            cboCedears.Items.Add("EJ9");
+            cboCedears.Items.Add("EJ10");
+
+            // Combobox cargado con registros traídos de la db para funcionalidad ideal y completa
+            //cboCedears.DataSource = cedearRepo.GetCedearModels();
+            //cboCedears.DisplayMember = "Nombre";
+            //cboCedears.ValueMember = "Id";
         }
 
 
