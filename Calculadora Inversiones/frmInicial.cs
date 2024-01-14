@@ -5,15 +5,18 @@ namespace Calculadora_Inversiones
     public partial class frmInicial : Form
     {
         CedearRepo cedearRepo = new CedearRepo();
+        frmCompraNueva frmCompraNueva = new frmCompraNueva();
+        frmHistorialTransacciones frmHistorialTransacciones = new frmHistorialTransacciones();
 
         public frmInicial()
         {
             InitializeComponent();
 
             cboCedears.DataSource = cedearRepo.GetCedearModels();
-            cboCedears.DisplayMember = "Descripcion";
+            cboCedears.DisplayMember = "Nombre";
             cboCedears.ValueMember = "Id";
         }
+
 
         public void CalculoGanancia(double montoCompra, double montoGanancia)
         {
@@ -42,7 +45,7 @@ namespace Calculadora_Inversiones
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            if(cboCedears.SelectedIndex == -1)
+            if (cboCedears.SelectedIndex == -1)
             {
                 MessageBox.Show("Debe seleccionar un Cedear", "Alerta");
             }
@@ -65,6 +68,16 @@ namespace Calculadora_Inversiones
                     MessageBox.Show("Debe ingresar el monto de la ganancia del Cedear", "Alerta");
                 }
             }
+        }
+
+        private void registrarNuevaCompraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCompraNueva.ShowDialog();
+        }
+
+        private void visualizarElHistorialDeTransaccionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmHistorialTransacciones.Show();
         }
     }
 }

@@ -9,7 +9,6 @@ namespace Calculadora_Inversiones.Models
     public class CedearModel
     {
         public int Id { get; set; }
-        public string Cedear { get; set; }
-        public string Descripcion { get; set; }
+        public string Nombre { get; set; }
     }
 }

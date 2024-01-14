@@ -40,6 +40,14 @@
             lblMontoGanancia = new Label();
             lblPorcentajeGanancia = new Label();
             btnCalcular = new Button();
+            menuStrip1 = new MenuStrip();
+            compraNuevaToolStripMenuItem = new ToolStripMenuItem();
+            registrarNuevaCompraToolStripMenuItem = new ToolStripMenuItem();
+            hisorialDeComprasToolStripMenuItem = new ToolStripMenuItem();
+            visualizarElHistorialDeTransaccionesToolStripMenuItem = new ToolStripMenuItem();
+            consultasToolStripMenuItem = new ToolStripMenuItem();
+            visualizarElHistorialDeConsultasRealizadasToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // cboCedears
@@ -92,7 +100,7 @@
             // 
             lblTitulo.AutoSize = true;
             lblTitulo.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTitulo.Location = new Point(262, 32);
+            lblTitulo.Location = new Point(259, 64);
             lblTitulo.Name = "lblTitulo";
             lblTitulo.Size = new Size(241, 25);
             lblTitulo.TabIndex = 5;
@@ -158,6 +166,57 @@
             btnCalcular.UseVisualStyleBackColor = true;
             btnCalcular.Click += btnCalcular_Click;
             // 
+            // menuStrip1
+            // 
+            menuStrip1.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { compraNuevaToolStripMenuItem, hisorialDeComprasToolStripMenuItem, consultasToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(800, 33);
+            menuStrip1.TabIndex = 11;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // compraNuevaToolStripMenuItem
+            // 
+            compraNuevaToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { registrarNuevaCompraToolStripMenuItem });
+            compraNuevaToolStripMenuItem.Name = "compraNuevaToolStripMenuItem";
+            compraNuevaToolStripMenuItem.Size = new Size(153, 29);
+            compraNuevaToolStripMenuItem.Text = "Compra Nueva";
+            // 
+            // registrarNuevaCompraToolStripMenuItem
+            // 
+            registrarNuevaCompraToolStripMenuItem.Name = "registrarNuevaCompraToolStripMenuItem";
+            registrarNuevaCompraToolStripMenuItem.Size = new Size(287, 30);
+            registrarNuevaCompraToolStripMenuItem.Text = "Registrar nueva compra";
+            registrarNuevaCompraToolStripMenuItem.Click += registrarNuevaCompraToolStripMenuItem_Click;
+            // 
+            // hisorialDeComprasToolStripMenuItem
+            // 
+            hisorialDeComprasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { visualizarElHistorialDeTransaccionesToolStripMenuItem });
+            hisorialDeComprasToolStripMenuItem.Name = "hisorialDeComprasToolStripMenuItem";
+            hisorialDeComprasToolStripMenuItem.Size = new Size(196, 29);
+            hisorialDeComprasToolStripMenuItem.Text = "Hisorial de Compras";
+            // 
+            // visualizarElHistorialDeTransaccionesToolStripMenuItem
+            // 
+            visualizarElHistorialDeTransaccionesToolStripMenuItem.Name = "visualizarElHistorialDeTransaccionesToolStripMenuItem";
+            visualizarElHistorialDeTransaccionesToolStripMenuItem.Size = new Size(407, 30);
+            visualizarElHistorialDeTransaccionesToolStripMenuItem.Text = "Visualizar el historial de transacciones";
+            visualizarElHistorialDeTransaccionesToolStripMenuItem.Click += visualizarElHistorialDeTransaccionesToolStripMenuItem_Click;
+            // 
+            // consultasToolStripMenuItem
+            // 
+            consultasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { visualizarElHistorialDeConsultasRealizadasToolStripMenuItem });
+            consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
+            consultasToolStripMenuItem.Size = new Size(107, 29);
+            consultasToolStripMenuItem.Text = "Consultas";
+            // 
+            // visualizarElHistorialDeConsultasRealizadasToolStripMenuItem
+            // 
+            visualizarElHistorialDeConsultasRealizadasToolStripMenuItem.Name = "visualizarElHistorialDeConsultasRealizadasToolStripMenuItem";
+            visualizarElHistorialDeConsultasRealizadasToolStripMenuItem.Size = new Size(461, 30);
+            visualizarElHistorialDeConsultasRealizadasToolStripMenuItem.Text = "⁮Visualizar el historial de consultas realizadas";
+            // 
             // frmInicial
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -175,9 +234,12 @@
             Controls.Add(txtPorcentajeCompra);
             Controls.Add(txtMontoCompra);
             Controls.Add(cboCedears);
+            Controls.Add(menuStrip1);
             Name = "frmInicial";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Calculadora de Inversiones";
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -195,5 +257,12 @@
         private Label lblPorcentajeGanancia;
         private Button btnCalcular;
         public ComboBox cboCedears;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem compraNuevaToolStripMenuItem;
+        private ToolStripMenuItem registrarNuevaCompraToolStripMenuItem;
+        private ToolStripMenuItem hisorialDeComprasToolStripMenuItem;
+        private ToolStripMenuItem visualizarElHistorialDeTransaccionesToolStripMenuItem;
+        private ToolStripMenuItem consultasToolStripMenuItem;
+        private ToolStripMenuItem visualizarElHistorialDeConsultasRealizadasToolStripMenuItem;
     }
 }

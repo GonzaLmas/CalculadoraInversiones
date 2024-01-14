@@ -18,7 +18,7 @@ namespace Calculadora_Inversiones.Servicios
         {
             using (IDbConnection connection = new SqlConnection(DBConnection.GetStringConnection()))
             {
-                return connection.Query<CedearModel>(@"SELECT Cedear, Descripcion FROM Cedear ORDER BY Descripcion");
+                return connection.Query<CedearModel>(@"SELECT Nombre FROM Cedear ORDER BY Nombre");
             }
         }
 
