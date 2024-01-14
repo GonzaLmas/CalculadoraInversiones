@@ -28,130 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            gbxCedear = new GroupBox();
-            cboCedearsCompra = new ComboBox();
-            rdbCedearNuevo = new RadioButton();
-            txtCedearNuevo = new TextBox();
-            gbxUsuario = new GroupBox();
             cboUsuarios = new ComboBox();
-            rdbUsuarioNuevo = new RadioButton();
-            txtusuarioNuevo = new TextBox();
-            numericUpDown1 = new NumericUpDown();
-            dateTimePicker1 = new DateTimePicker();
-            textBox1 = new TextBox();
+            nupCompraNueva = new NumericUpDown();
+            dtpCompra = new DateTimePicker();
+            txtMontoCompraNueva = new TextBox();
             lblMontoCompra = new Label();
             lblFechaCompra = new Label();
             lblCantidad = new Label();
             lblIngreseNuevaCompra = new Label();
             btnAgregarCompra = new Button();
             btnCancelar = new Button();
-            gbxCedear.SuspendLayout();
-            gbxUsuario.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            cboCedearsCompra = new ComboBox();
+            lblCedearNuevaCompra = new Label();
+            lblUsuarioNuevaCompra = new Label();
+            ((System.ComponentModel.ISupportInitialize)nupCompraNueva).BeginInit();
             SuspendLayout();
-            // 
-            // gbxCedear
-            // 
-            gbxCedear.Controls.Add(cboCedearsCompra);
-            gbxCedear.Controls.Add(rdbCedearNuevo);
-            gbxCedear.Controls.Add(txtCedearNuevo);
-            gbxCedear.Location = new Point(154, 166);
-            gbxCedear.Name = "gbxCedear";
-            gbxCedear.Size = new Size(158, 192);
-            gbxCedear.TabIndex = 11;
-            gbxCedear.TabStop = false;
-            gbxCedear.Text = "Cedear";
-            // 
-            // cboCedearsCompra
-            // 
-            cboCedearsCompra.FormattingEnabled = true;
-            cboCedearsCompra.Location = new Point(17, 34);
-            cboCedearsCompra.Name = "cboCedearsCompra";
-            cboCedearsCompra.Size = new Size(121, 23);
-            cboCedearsCompra.TabIndex = 0;
-            // 
-            // rdbCedearNuevo
-            // 
-            rdbCedearNuevo.AutoSize = true;
-            rdbCedearNuevo.Location = new Point(28, 98);
-            rdbCedearNuevo.Name = "rdbCedearNuevo";
-            rdbCedearNuevo.Size = new Size(100, 19);
-            rdbCedearNuevo.TabIndex = 1;
-            rdbCedearNuevo.TabStop = true;
-            rdbCedearNuevo.Text = "Cedear Nuevo";
-            rdbCedearNuevo.UseVisualStyleBackColor = true;
-            // 
-            // txtCedearNuevo
-            // 
-            txtCedearNuevo.Location = new Point(28, 123);
-            txtCedearNuevo.Name = "txtCedearNuevo";
-            txtCedearNuevo.Size = new Size(100, 23);
-            txtCedearNuevo.TabIndex = 3;
-            // 
-            // gbxUsuario
-            // 
-            gbxUsuario.Controls.Add(cboUsuarios);
-            gbxUsuario.Controls.Add(rdbUsuarioNuevo);
-            gbxUsuario.Controls.Add(txtusuarioNuevo);
-            gbxUsuario.Location = new Point(323, 166);
-            gbxUsuario.Name = "gbxUsuario";
-            gbxUsuario.Size = new Size(158, 192);
-            gbxUsuario.TabIndex = 11;
-            gbxUsuario.TabStop = false;
-            gbxUsuario.Text = "Usuario";
             // 
             // cboUsuarios
             // 
+            cboUsuarios.DropDownStyle = ComboBoxStyle.DropDownList;
             cboUsuarios.FormattingEnabled = true;
-            cboUsuarios.Location = new Point(24, 38);
+            cboUsuarios.Location = new Point(358, 205);
             cboUsuarios.Name = "cboUsuarios";
             cboUsuarios.Size = new Size(121, 23);
             cboUsuarios.TabIndex = 0;
             // 
-            // rdbUsuarioNuevo
+            // nupCompraNueva
             // 
-            rdbUsuarioNuevo.AutoSize = true;
-            rdbUsuarioNuevo.Location = new Point(30, 89);
-            rdbUsuarioNuevo.Name = "rdbUsuarioNuevo";
-            rdbUsuarioNuevo.Size = new Size(103, 19);
-            rdbUsuarioNuevo.TabIndex = 1;
-            rdbUsuarioNuevo.TabStop = true;
-            rdbUsuarioNuevo.Text = "Usuario Nuevo";
-            rdbUsuarioNuevo.UseVisualStyleBackColor = true;
+            nupCompraNueva.Location = new Point(437, 133);
+            nupCompraNueva.Name = "nupCompraNueva";
+            nupCompraNueva.Size = new Size(138, 23);
+            nupCompraNueva.TabIndex = 4;
             // 
-            // txtusuarioNuevo
+            // dtpCompra
             // 
-            txtusuarioNuevo.Location = new Point(33, 114);
-            txtusuarioNuevo.Name = "txtusuarioNuevo";
-            txtusuarioNuevo.Size = new Size(100, 23);
-            txtusuarioNuevo.TabIndex = 3;
+            dtpCompra.Format = DateTimePickerFormat.Short;
+            dtpCompra.Location = new Point(252, 133);
+            dtpCompra.Name = "dtpCompra";
+            dtpCompra.Size = new Size(138, 23);
+            dtpCompra.TabIndex = 12;
             // 
-            // numericUpDown1
+            // txtMontoCompraNueva
             // 
-            numericUpDown1.Location = new Point(438, 109);
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(117, 23);
-            numericUpDown1.TabIndex = 4;
-            // 
-            // dateTimePicker1
-            // 
-            dateTimePicker1.Format = DateTimePickerFormat.Short;
-            dateTimePicker1.Location = new Point(257, 109);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(117, 23);
-            dateTimePicker1.TabIndex = 12;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(75, 109);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(117, 23);
-            textBox1.TabIndex = 4;
+            txtMontoCompraNueva.Location = new Point(81, 133);
+            txtMontoCompraNueva.Name = "txtMontoCompraNueva";
+            txtMontoCompraNueva.Size = new Size(138, 23);
+            txtMontoCompraNueva.TabIndex = 4;
             // 
             // lblMontoCompra
             // 
             lblMontoCompra.AutoSize = true;
-            lblMontoCompra.Location = new Point(75, 78);
+            lblMontoCompra.Location = new Point(92, 115);
             lblMontoCompra.Name = "lblMontoCompra";
             lblMontoCompra.Size = new Size(117, 15);
             lblMontoCompra.TabIndex = 13;
@@ -160,7 +87,7 @@
             // lblFechaCompra
             // 
             lblFechaCompra.AutoSize = true;
-            lblFechaCompra.Location = new Point(257, 78);
+            lblFechaCompra.Location = new Point(270, 115);
             lblFechaCompra.Name = "lblFechaCompra";
             lblFechaCompra.Size = new Size(100, 15);
             lblFechaCompra.TabIndex = 14;
@@ -169,7 +96,7 @@
             // lblCantidad
             // 
             lblCantidad.AutoSize = true;
-            lblCantidad.Location = new Point(471, 78);
+            lblCantidad.Location = new Point(481, 115);
             lblCantidad.Name = "lblCantidad";
             lblCantidad.Size = new Size(55, 15);
             lblCantidad.TabIndex = 15;
@@ -179,7 +106,7 @@
             // 
             lblIngreseNuevaCompra.AutoSize = true;
             lblIngreseNuevaCompra.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblIngreseNuevaCompra.Location = new Point(222, 38);
+            lblIngreseNuevaCompra.Location = new Point(229, 43);
             lblIngreseNuevaCompra.Name = "lblIngreseNuevaCompra";
             lblIngreseNuevaCompra.Size = new Size(177, 20);
             lblIngreseNuevaCompra.TabIndex = 16;
@@ -187,7 +114,7 @@
             // 
             // btnAgregarCompra
             // 
-            btnAgregarCompra.Location = new Point(217, 405);
+            btnAgregarCompra.Location = new Point(240, 281);
             btnAgregarCompra.Name = "btnAgregarCompra";
             btnAgregarCompra.Size = new Size(75, 23);
             btnAgregarCompra.TabIndex = 17;
@@ -197,7 +124,7 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(356, 405);
+            btnCancelar.Location = new Point(342, 281);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(75, 23);
             btnCancelar.TabIndex = 18;
@@ -205,52 +132,75 @@
             btnCancelar.UseVisualStyleBackColor = true;
             btnCancelar.Click += btnCancelar_Click;
             // 
+            // cboCedearsCompra
+            // 
+            cboCedearsCompra.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboCedearsCompra.FormattingEnabled = true;
+            cboCedearsCompra.Location = new Point(173, 205);
+            cboCedearsCompra.Name = "cboCedearsCompra";
+            cboCedearsCompra.Size = new Size(121, 23);
+            cboCedearsCompra.TabIndex = 0;
+            // 
+            // lblCedearNuevaCompra
+            // 
+            lblCedearNuevaCompra.AutoSize = true;
+            lblCedearNuevaCompra.Location = new Point(213, 187);
+            lblCedearNuevaCompra.Name = "lblCedearNuevaCompra";
+            lblCedearNuevaCompra.Size = new Size(44, 15);
+            lblCedearNuevaCompra.TabIndex = 19;
+            lblCedearNuevaCompra.Text = "Cedear";
+            // 
+            // lblUsuarioNuevaCompra
+            // 
+            lblUsuarioNuevaCompra.AutoSize = true;
+            lblUsuarioNuevaCompra.Location = new Point(396, 187);
+            lblUsuarioNuevaCompra.Name = "lblUsuarioNuevaCompra";
+            lblUsuarioNuevaCompra.Size = new Size(47, 15);
+            lblUsuarioNuevaCompra.TabIndex = 20;
+            lblUsuarioNuevaCompra.Text = "Usuario";
+            // 
             // frmCompraNueva
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(665, 466);
+            BackColor = Color.MediumPurple;
+            ClientSize = new Size(665, 366);
+            Controls.Add(lblUsuarioNuevaCompra);
+            Controls.Add(lblCedearNuevaCompra);
+            Controls.Add(cboUsuarios);
+            Controls.Add(cboCedearsCompra);
             Controls.Add(btnCancelar);
             Controls.Add(btnAgregarCompra);
             Controls.Add(lblIngreseNuevaCompra);
             Controls.Add(lblCantidad);
             Controls.Add(lblFechaCompra);
             Controls.Add(lblMontoCompra);
-            Controls.Add(textBox1);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(numericUpDown1);
-            Controls.Add(gbxCedear);
-            Controls.Add(gbxUsuario);
+            Controls.Add(txtMontoCompraNueva);
+            Controls.Add(dtpCompra);
+            Controls.Add(nupCompraNueva);
+            MaximumSize = new Size(681, 405);
+            MinimumSize = new Size(681, 405);
             Name = "frmCompraNueva";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Registrar Nueva Compra";
-            gbxCedear.ResumeLayout(false);
-            gbxCedear.PerformLayout();
-            gbxUsuario.ResumeLayout(false);
-            gbxUsuario.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nupCompraNueva).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private GroupBox gbxCedear;
-        private ComboBox cboCedearsCompra;
-        private RadioButton rdbCedearNuevo;
-        private TextBox txtCedearNuevo;
-        private GroupBox gbxUsuario;
         private ComboBox cboUsuarios;
-        private RadioButton rdbUsuarioNuevo;
-        private TextBox txtusuarioNuevo;
-        private NumericUpDown numericUpDown1;
-        private DateTimePicker dateTimePicker1;
+        private NumericUpDown nupCompraNueva;
+        private DateTimePicker dtpCompra;
         private Label lblMontoCompra;
         private Label lblFechaCompra;
         private Label lblCantidad;
         private Label lblIngreseNuevaCompra;
         private Button btnAgregarCompra;
         private Button btnCancelar;
-        public TextBox textBox1;
+        public TextBox txtMontoCompraNueva;
+        private ComboBox cboCedearsCompra;
+        private Label lblCedearNuevaCompra;
+        private Label lblUsuarioNuevaCompra;
     }
 }

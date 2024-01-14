@@ -54,14 +54,14 @@
             // 
             cboCedears.DropDownStyle = ComboBoxStyle.DropDownList;
             cboCedears.FormattingEnabled = true;
-            cboCedears.Location = new Point(307, 125);
+            cboCedears.Location = new Point(269, 130);
             cboCedears.Name = "cboCedears";
             cboCedears.Size = new Size(146, 23);
             cboCedears.TabIndex = 0;
             // 
             // txtMontoCompra
             // 
-            txtMontoCompra.Location = new Point(226, 208);
+            txtMontoCompra.Location = new Point(188, 213);
             txtMontoCompra.Name = "txtMontoCompra";
             txtMontoCompra.Size = new Size(136, 23);
             txtMontoCompra.TabIndex = 1;
@@ -69,7 +69,7 @@
             // 
             // txtPorcentajeCompra
             // 
-            txtPorcentajeCompra.Location = new Point(399, 208);
+            txtPorcentajeCompra.Location = new Point(361, 213);
             txtPorcentajeCompra.Name = "txtPorcentajeCompra";
             txtPorcentajeCompra.ReadOnly = true;
             txtPorcentajeCompra.Size = new Size(136, 23);
@@ -80,7 +80,7 @@
             // 
             // txtMontoGanancia
             // 
-            txtMontoGanancia.Location = new Point(226, 282);
+            txtMontoGanancia.Location = new Point(188, 287);
             txtMontoGanancia.Name = "txtMontoGanancia";
             txtMontoGanancia.Size = new Size(136, 23);
             txtMontoGanancia.TabIndex = 2;
@@ -88,7 +88,7 @@
             // 
             // txtPorcentajeGanancia
             // 
-            txtPorcentajeGanancia.Location = new Point(399, 282);
+            txtPorcentajeGanancia.Location = new Point(361, 287);
             txtPorcentajeGanancia.Name = "txtPorcentajeGanancia";
             txtPorcentajeGanancia.ReadOnly = true;
             txtPorcentajeGanancia.Size = new Size(136, 23);
@@ -100,7 +100,7 @@
             // 
             lblTitulo.AutoSize = true;
             lblTitulo.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTitulo.Location = new Point(259, 64);
+            lblTitulo.Location = new Point(221, 69);
             lblTitulo.Name = "lblTitulo";
             lblTitulo.Size = new Size(241, 25);
             lblTitulo.TabIndex = 5;
@@ -110,7 +110,7 @@
             // 
             lblCedear.AutoSize = true;
             lblCedear.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblCedear.Location = new Point(354, 105);
+            lblCedear.Location = new Point(316, 110);
             lblCedear.Name = "lblCedear";
             lblCedear.Size = new Size(50, 17);
             lblCedear.TabIndex = 6;
@@ -120,7 +120,7 @@
             // 
             lblMontoCompra.AutoSize = true;
             lblMontoCompra.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblMontoCompra.Location = new Point(246, 188);
+            lblMontoCompra.Location = new Point(208, 193);
             lblMontoCompra.Name = "lblMontoCompra";
             lblMontoCompra.Size = new Size(101, 17);
             lblMontoCompra.TabIndex = 7;
@@ -130,7 +130,7 @@
             // 
             lblPorcentajeCompra.AutoSize = true;
             lblPorcentajeCompra.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblPorcentajeCompra.Location = new Point(428, 188);
+            lblPorcentajeCompra.Location = new Point(390, 193);
             lblPorcentajeCompra.Name = "lblPorcentajeCompra";
             lblPorcentajeCompra.Size = new Size(72, 17);
             lblPorcentajeCompra.TabIndex = 4;
@@ -140,7 +140,7 @@
             // 
             lblMontoGanancia.AutoSize = true;
             lblMontoGanancia.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblMontoGanancia.Location = new Point(239, 262);
+            lblMontoGanancia.Location = new Point(201, 267);
             lblMontoGanancia.Name = "lblMontoGanancia";
             lblMontoGanancia.Size = new Size(108, 17);
             lblMontoGanancia.TabIndex = 9;
@@ -150,7 +150,7 @@
             // 
             lblPorcentajeGanancia.AutoSize = true;
             lblPorcentajeGanancia.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblPorcentajeGanancia.Location = new Point(399, 262);
+            lblPorcentajeGanancia.Location = new Point(361, 267);
             lblPorcentajeGanancia.Name = "lblPorcentajeGanancia";
             lblPorcentajeGanancia.Size = new Size(131, 17);
             lblPorcentajeGanancia.TabIndex = 10;
@@ -158,7 +158,7 @@
             // 
             // btnCalcular
             // 
-            btnCalcular.Location = new Point(340, 336);
+            btnCalcular.Location = new Point(302, 341);
             btnCalcular.Name = "btnCalcular";
             btnCalcular.Size = new Size(75, 23);
             btnCalcular.TabIndex = 3;
@@ -172,7 +172,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { compraNuevaToolStripMenuItem, hisorialDeComprasToolStripMenuItem, consultasToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 33);
+            menuStrip1.Size = new Size(693, 33);
             menuStrip1.TabIndex = 11;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -221,7 +221,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.MediumPurple;
+            ClientSize = new Size(693, 421);
             Controls.Add(btnCalcular);
             Controls.Add(lblPorcentajeGanancia);
             Controls.Add(lblMontoGanancia);
@@ -235,6 +236,9 @@
             Controls.Add(txtMontoCompra);
             Controls.Add(cboCedears);
             Controls.Add(menuStrip1);
+            MaximizeBox = false;
+            MaximumSize = new Size(709, 460);
+            MinimumSize = new Size(709, 460);
             Name = "frmInicial";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Calculadora de Inversiones";

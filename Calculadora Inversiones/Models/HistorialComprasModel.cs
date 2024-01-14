@@ -19,7 +19,9 @@ namespace Calculadora_Inversiones.Models
         public int CantidadCedears { get; set; }
         public string? Cedear { get; set; }
         public string? Usuario { get; set; }
+        public int IdCedear { get; set; }
+        public int IdUsuario { get; set; }
 
-        
+
     }
 }

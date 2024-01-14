@@ -5,8 +5,6 @@ namespace Calculadora_Inversiones
     public partial class frmInicial : Form
     {
         CedearRepo cedearRepo = new CedearRepo();
-        frmCompraNueva frmCompraNueva = new frmCompraNueva();
-        frmHistorialTransacciones frmHistorialTransacciones = new frmHistorialTransacciones();
 
         public frmInicial()
         {
@@ -72,11 +70,13 @@ namespace Calculadora_Inversiones
 
         private void registrarNuevaCompraToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            frmCompraNueva frmCompraNueva = new frmCompraNueva();
             frmCompraNueva.ShowDialog();
         }
 
         private void visualizarElHistorialDeTransaccionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            frmHistorialTransacciones frmHistorialTransacciones = new frmHistorialTransacciones();
             frmHistorialTransacciones.Show();
         }
     }

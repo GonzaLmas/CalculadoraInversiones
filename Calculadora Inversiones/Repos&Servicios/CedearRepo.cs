@@ -16,9 +16,11 @@ namespace Calculadora_Inversiones.Servicios
     {
         public IEnumerable<CedearModel> GetCedearModels()
         {
+            var sp = "sp_GetCedears";
+
             using (IDbConnection connection = new SqlConnection(DBConnection.GetStringConnection()))
             {
-                return connection.Query<CedearModel>(@"SELECT Nombre FROM Cedear ORDER BY Nombre");
+                return connection.Query<CedearModel>(sp, commandType: CommandType.StoredProcedure);
             }
         }
 

@@ -21,6 +21,8 @@ namespace Calculadora_Inversiones
 
             dgvHistorialCompras.DataSource = historialComprasRepo.GetHistorialCompras();
             dgvHistorialCompras.Columns[0].Visible = false;
+            dgvHistorialCompras.Columns[6].Visible = false;
+            dgvHistorialCompras.Columns[7].Visible = false;
         }
 
     }

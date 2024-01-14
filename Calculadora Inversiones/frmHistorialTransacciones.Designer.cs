@@ -55,9 +55,11 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.MediumPurple;
             ClientSize = new Size(571, 690);
             Controls.Add(lblHistorialTransacciones);
             Controls.Add(dgvHistorialCompras);
+            MinimumSize = new Size(587, 729);
             Name = "frmHistorialTransacciones";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Historial de Transacciones";
