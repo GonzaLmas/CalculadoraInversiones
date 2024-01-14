@@ -183,8 +183,6 @@
         }
 
         #endregion
-
-        private ComboBox cboCedears;
         private TextBox txtMontoCompra;
         private TextBox txtPorcentajeCompra;
         private TextBox txtMontoGanancia;
@@ -196,5 +194,6 @@
         private Label lblMontoGanancia;
         private Label lblPorcentajeGanancia;
         private Button btnCalcular;
+        public ComboBox cboCedears;
     }
 }

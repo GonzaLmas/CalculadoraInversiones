@@ -1,17 +1,18 @@
+using Calculadora_Inversiones.Servicios;
+
 namespace Calculadora_Inversiones
 {
     public partial class frmInicial : Form
     {
+        CedearRepo cedearRepo = new CedearRepo();
+
         public frmInicial()
         {
             InitializeComponent();
 
-            cboCedears.Items.Add("AAPL, Apple");
-            cboCedears.Items.Add("EEM, Emerging Markets");
-            cboCedears.Items.Add("GOOGL, Alphabeth");
-            cboCedears.Items.Add("META, Meta");
-            cboCedears.Items.Add("QQQ, Nasdaq 100");
-            cboCedears.Items.Add("SPY, S&P 500");
+            cboCedears.DataSource = cedearRepo.GetCedearModels();
+            cboCedears.DisplayMember = "Descripcion";
+            cboCedears.ValueMember = "Id";
         }
 
         public void CalculoGanancia(double montoCompra, double montoGanancia)
